@@ -1,0 +1,12 @@
+<%= link_to "Adicionar contato", :new_contacts%>
+
+<table>
+    <% @contacts.each do |contact| %>
+    
+        <tr>
+            <td><%= contact.name%></td>
+            <td><%= contact.email%></td>
+        </tr>
+        
+    <% end %>
+</table>
